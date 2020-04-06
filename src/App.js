@@ -18,14 +18,19 @@ class App extends Component {
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-            <li><Link to="/">PROFILE</Link></li>
-            <li><Link to="/EXPERIENCE">EXPERIENCE</Link></li>
-            <li><Link to="/PROJECTS">PROJECTS</Link></li>
+        <li class="nav-item active">
+        <li><Link to="/">PROFILE</Link></li>
+        </li>
+        <li class="nav-item">
+        <li><Link to="/EXPERIENCE">EXPERIENCE</Link></li>>
+        </li>
+        <li class="nav-item">
+        <li><Link to="/PROJECTS">PROJECTS</Link></li>
+        </li>
       </ul>
     </div>
 </nav>
 
-        
           <hr />
   
           <Route exact path="/" component={PROFILE} />
