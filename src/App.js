@@ -9,6 +9,7 @@ render(){
   return(
     
     <Router>
+      <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/Sundhar-resume/">SUNDHARRAJAN</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,19 +19,19 @@ render(){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">PROFILE</a>
+          <a class="nav-link" href="/Sundhar-resume/">PROFILE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Experience">EXPERIENCE</a>
+          <a class="nav-link" href="/Sundhar-resume/Experience">EXPERIENCE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Projects">PROJECTS</a>
+          <a class="nav-link" href="/Sundhar-resume/Projects">PROJECTS</a>
         </li>
       </ul>
     </div>
 </nav>
 <Switch>
-<Route path="/" exact strict render={
+<Route path="/Sundhar-resume/" exact strict render={
       () => {
         return(
         <div class="container-fluid">
@@ -207,7 +208,7 @@ render(){
 
       }
     }/>
-        <Route path="/Experience" exact strict render={
+        <Route path="/Sundhar-resume/Experience" exact strict render={
           () => {
             return(
               <section class="experience_background">
@@ -248,7 +249,7 @@ render(){
           }
         }/>
 
-<Route path="/Projects" exact strict render={
+<Route path="/Sundhar-resume/Projects" exact strict render={
           () => {
             return(
               <section class="Project_background">
@@ -298,7 +299,9 @@ render(){
                   </section>
              );
           }
-        }/></Switch>
+        }/>
+        </Switch>
+        </div>
     </Router>
   );
 }
