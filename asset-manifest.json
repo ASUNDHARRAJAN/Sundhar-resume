@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Sundhar-resume/static/css/main.1bafc9b8.chunk.css",
+    "main.css": "/Sundhar-resume/static/css/main.9a70092d.chunk.css",
     "main.js": "/Sundhar-resume/static/js/main.d7a6db0f.chunk.js",
     "main.js.map": "/Sundhar-resume/static/js/main.d7a6db0f.chunk.js.map",
     "runtime-main.js": "/Sundhar-resume/static/js/runtime-main.5ca9aea6.js",
@@ -9,17 +9,17 @@
     "static/js/2.0542da81.chunk.js": "/Sundhar-resume/static/js/2.0542da81.chunk.js",
     "static/js/2.0542da81.chunk.js.map": "/Sundhar-resume/static/js/2.0542da81.chunk.js.map",
     "index.html": "/Sundhar-resume/index.html",
-    "precache-manifest.c106a18d5c137161489f6f3b9474871a.js": "/Sundhar-resume/precache-manifest.c106a18d5c137161489f6f3b9474871a.js",
+    "precache-manifest.ebbebfa5944217a72858e36143d3af1d.js": "/Sundhar-resume/precache-manifest.ebbebfa5944217a72858e36143d3af1d.js",
     "service-worker.js": "/Sundhar-resume/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Sundhar-resume/static/css/2.de424728.chunk.css.map",
-    "static/css/main.1bafc9b8.chunk.css.map": "/Sundhar-resume/static/css/main.1bafc9b8.chunk.css.map",
+    "static/css/main.9a70092d.chunk.css.map": "/Sundhar-resume/static/css/main.9a70092d.chunk.css.map",
     "static/js/2.0542da81.chunk.js.LICENSE.txt": "/Sundhar-resume/static/js/2.0542da81.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5ca9aea6.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.0542da81.chunk.js",
-    "static/css/main.1bafc9b8.chunk.css",
+    "static/css/main.9a70092d.chunk.css",
     "static/js/main.d7a6db0f.chunk.js"
   ]
 }
