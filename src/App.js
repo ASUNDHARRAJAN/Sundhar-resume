@@ -10,14 +10,26 @@ class App extends Component {
     return (
       <HashRouter basename="/">
         <div>
-          <ul>
-            <li><Link to="/">PROFILE</Link></li>
-            <li><Link to="/EXPERIENCE">EXPERIENCE</Link></li>
-            <li><Link to="/PROJECTS">PROJECTS</Link></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">SUNDHARRAJAN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <hr />
-  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/Sundhar-resume">PROFILE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Sundhar-resume/Experience">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Sundhar-resume/Projects">PROJECTS</a>
+        </li>
+      </ul>
+    </div>
+</nav>  
           <Route exact path="/" component={PROFILE} />
           <Route path="/EXPERIENCE" component={EXPERIENCE} />
           <Route path="/PROJECTS" component={PROJECTS} />
