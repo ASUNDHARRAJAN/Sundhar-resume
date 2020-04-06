@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sundhar-resume/static/css/main.b4f03f54.chunk.css",
+    "main.js": "/sundhar-resume/static/js/main.9057beb7.chunk.js",
+    "main.js.map": "/sundhar-resume/static/js/main.9057beb7.chunk.js.map",
+    "runtime-main.js": "/sundhar-resume/static/js/runtime-main.611dc598.js",
+    "runtime-main.js.map": "/sundhar-resume/static/js/runtime-main.611dc598.js.map",
+    "static/css/2.de424728.chunk.css": "/sundhar-resume/static/css/2.de424728.chunk.css",
+    "static/js/2.8b1bb4da.chunk.js": "/sundhar-resume/static/js/2.8b1bb4da.chunk.js",
+    "static/js/2.8b1bb4da.chunk.js.map": "/sundhar-resume/static/js/2.8b1bb4da.chunk.js.map",
+    "index.html": "/sundhar-resume/index.html",
+    "precache-manifest.4e04e4de3239b03e6d55d6b60d3a48d6.js": "/sundhar-resume/precache-manifest.4e04e4de3239b03e6d55d6b60d3a48d6.js",
+    "service-worker.js": "/sundhar-resume/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/sundhar-resume/static/css/2.de424728.chunk.css.map",
+    "static/css/main.b4f03f54.chunk.css.map": "/sundhar-resume/static/css/main.b4f03f54.chunk.css.map",
+    "static/js/2.8b1bb4da.chunk.js.LICENSE.txt": "/sundhar-resume/static/js/2.8b1bb4da.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.611dc598.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.8b1bb4da.chunk.js",
+    "static/css/main.b4f03f54.chunk.css",
+    "static/js/main.9057beb7.chunk.js"
+  ]
+}
