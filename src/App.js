@@ -2,216 +2,209 @@ import React, { Component } from 'react';
 import './App.css';
 import {Image} from 'react-bootstrap';
 import {BrowserRouter as Router,Switch} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import { HashRouter, Route, Link } from "react-router-dom";
 
-class App extends Component{
-render(){
-  return(
-    
-    <Router>
-      <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/Sundhar-resume/">SUNDHARRAJAN</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/Sundhar-resume/">PROFILE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/Sundhar-resume/Experience">EXPERIENCE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/Sundhar-resume/Projects">PROJECTS</a>
-        </li>
-      </ul>
+class App extends Component {
+  render() {
+    return (
+      <HashRouter basename="/">
+        <div>
+          <ul>
+            <li><Link to="/">PROFILE</Link></li>
+            <li><Link to="/EXPERIENCE">EXPERIENCE</Link></li>
+            <li><Link to="/PROJECTS">PROJECTS</Link></li>
+          </ul>
+
+          <hr />
+  
+          <Route exact path="/" component={PROFILE} />
+          <Route path="/EXPERIENCE" component={EXPERIENCE} />
+          <Route path="/PROJECTS" component={PROJECTS} />
+        </div>
+      </HashRouter>
+    );
+  }
+}
+
+const PROFILE = () => 
+<div class="container-fluid">
+<div class="row profile_section">
+    <div class="col-md-6 text-center profile_section_left">
+      <Image src="Profile.jpg" width="250" height="300" roundedCircle/>
     </div>
-</nav>
-<Switch>
-<Route path="/Sundhar-resume/" exact strict render={
-      () => {
-        return(
-        <div class="container-fluid">
-        <div class="row profile_section">
-            <div class="col-md-6 text-center profile_section_left">
-              <Image src="Profile.jpg" width="250" height="300" roundedCircle/>
-            </div>
-            <div class="col-md-6 profile_section_right">
-                <p><b>SUNDHARRAJAN </b> <br></br> SALEM,TamilNadu <br></br> 8344230573 <br></br> SundharAnnadurai@gmail.com <br></br></p>
-            </div>
-        </div><br></br>
-        <div class="row objective_section">
-          <div class="col-md-12">
-              <h4>OBJECTIIVE </h4>           
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 obj_text">
-                <p>To join an organization and to work with my fullest dedication and thereby helping organization and myself to develop.</p>
-          </div>
-        </div>
-      
-      <h4>EDUCATION DETAILS</h4><br></br>
-      <section class="education_section">
-      <div class="row">
-          <div class="col-md-6 text-center education_inner">
-              <Image src="Sona_College_of_Technology_logo.png" alt="SONA-LOGO" width="32%" height="auto"></Image>
-          </div>
-          <div class="col-md-6 education_right_sona">
-          <p><h6>Sona College of Technology, Salem</h6>
-                        B.E - CSE<br></br>
-                        2014 – 2017 <br></br>
-                        7.58 CGPA</p>
-          </div>
-      </div>
-      
-      <div class="row">
-          <div class="col-md-6 text-center education_inner">
-              <Image src="TPT-logo.png" alt="TPT-LOGO" width="28%" height="auto"></Image>
-          </div>
-          <div class="col-md-6 education_right_tpt">
-          <p><h6>Thiagarajar Polytechnic College, Salem</h6>
-                     Diploma – CSE <br></br>
-                     2011 – 2014 <br></br>
-                     96.77%</p>
-          </div>
-      </div>
-      </section><br></br>
+    <div class="col-md-6 profile_section_right">
+        <p><b>SUNDHARRAJAN </b> <br></br> SALEM,TamilNadu <br></br> 8344230573 <br></br> SundharAnnadurai@gmail.com <br></br></p>
+    </div>
+</div><br></br>
+<div class="row objective_section">
+  <div class="col-md-12">
+      <h4>OBJECTIIVE </h4>           
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 obj_text">
+        <p>To join an organization and to work with my fullest dedication and thereby helping organization and myself to develop.</p>
+  </div>
+</div>
 
-      <h4>SKILLS</h4>
-      <section class="Skills_section"><br></br>
-      <h6 style={{fontSize:"1.15rem"}}>WEB DEVELOPMENT :</h6>
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>HTML5</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"98%"}}>
-            98%
-          </div>
-        </div>
-        </div>
-      </div>
-      
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>CSS3</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"95%"}}>
-            95%
-          </div>
-        </div>
-        </div>
-      </div>
-      
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>JAVASCRIPT</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active"  style={{width:"90%"}}>
-            90%
-          </div>
-        </div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5"><p>JQUERY</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
-            90%
-          </div>
-        </div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5"><p>BOOTSTRAP 4</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"95%"}}>
-            95%
-          </div>
-        </div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5"><p>LEARNING: REACT JS AND WORDPRESS</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
-            90%
-          </div>
-        </div>
-        </div>
-      </div><br></br>
-      <h6 style={{fontSize:"1.15rem"}}>DATABASE :</h6>
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>MySQL</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active"  style={{width:"92%"}}>
-            92%
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>SQL Server</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"92%"}}>
-            92%
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>Learning: MongoDB</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
-            90%
-          </div>
-        </div>
-        </div>
-      </div><br></br>
-      <h6 style={{fontSize:"1.15rem"}}>SAP CLOUD APPLICATION STUDIO(SDK) :</h6>
-      <div class="row">
-      <div class="col-md-1"></div>
-        <div class="col-md-5"><p>BO, XBO, Screens, Process Extension Scenario and Adobe Live Cycle Designer – Forms Development</p></div>
-        <div class="col-md-6">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
-            90%
-          </div>
-        </div>
-        </div>
-      </div><br></br>
-      </section><br></br>
-      
-      </div>
-      );
+<h4>EDUCATION DETAILS</h4><br></br>
+<section class="education_section">
+<div class="row">
+  <div class="col-md-6 text-center education_inner">
+      <Image src="Sona_College_of_Technology_logo.png" alt="SONA-LOGO" width="32%" height="auto"></Image>
+  </div>
+  <div class="col-md-6 education_right_sona">
+  <p><h6>Sona College of Technology, Salem</h6>
+                B.E - CSE<br></br>
+                2014 – 2017 <br></br>
+                7.58 CGPA</p>
+  </div>
+</div>
 
-      }
-    }/>
-        <Route path="/Sundhar-resume/Experience" exact strict render={
-          () => {
-            return(
-              <section class="experience_background">
+<div class="row">
+  <div class="col-md-6 text-center education_inner">
+      <Image src="TPT-logo.png" alt="TPT-LOGO" width="28%" height="auto"></Image>
+  </div>
+  <div class="col-md-6 education_right_tpt">
+  <p><h6>Thiagarajar Polytechnic College, Salem</h6>
+             Diploma – CSE <br></br>
+             2011 – 2014 <br></br>
+             96.77%</p>
+  </div>
+</div>
+</section><br></br>
+
+<h4>SKILLS</h4>
+<section class="Skills_section"><br></br>
+<h6 style={{fontSize:"1.15rem"}}>WEB DEVELOPMENT :</h6>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>HTML5</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"98%"}}>
+    98%
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>CSS3</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"95%"}}>
+    95%
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>JAVASCRIPT</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active"  style={{width:"90%"}}>
+    90%
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>JQUERY</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
+    90%
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>BOOTSTRAP 4</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"95%"}}>
+    95%
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>LEARNING: REACT JS AND WORDPRESS</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
+    90%
+  </div>
+</div>
+</div>
+</div><br></br>
+<h6 style={{fontSize:"1.15rem"}}>DATABASE :</h6>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>MySQL</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active"  style={{width:"92%"}}>
+    92%
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>SQL Server</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"92%"}}>
+    92%
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>Learning: MongoDB</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
+    90%
+  </div>
+</div>
+</div>
+</div><br></br>
+<h6 style={{fontSize:"1.15rem"}}>SAP CLOUD APPLICATION STUDIO(SDK) :</h6>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5"><p>BO, XBO, Screens, Process Extension Scenario and Adobe Live Cycle Designer – Forms Development</p></div>
+<div class="col-md-6">
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped active" style={{width:"90%"}}>
+    90%
+  </div>
+</div>
+</div>
+</div><br></br>
+</section><br></br>
+
+</div>
+
+
+
+
+
+const EXPERIENCE = () => 
+<section class="experience_background">
                 <div class="container">
                 <div class="col-md-12">
                   <br></br><h4>WORK EXPERIENCE</h4>
@@ -245,14 +238,10 @@ render(){
                   </div>
                   <br></br>
                   </section>
-             );
-          }
-        }/>
 
-<Route path="/Sundhar-resume/Projects" exact strict render={
-          () => {
-            return(
-              <section class="Project_background">
+
+const PROJECTS = () => 
+<section class="Project_background">
               <div class="container">
                   <br></br><h5>WEB DEVELOPMENT PROJECTS</h5><br></br>
                   
@@ -297,13 +286,5 @@ render(){
                   </p>
                   </div><br></br>
                   </section>
-             );
-          }
-        }/>
-        </Switch></div>
-    </Router>
-  );
-}
 
-}
 export default App;
