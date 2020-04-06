@@ -16,13 +16,13 @@ class App extends Component {
               <span class="navbar-toggler-icon"></span>
             </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">  <Link to="/">PROFILE</Link> </li>
-        <li class="nav-item"><Link to="/EXPERIENCE">EXPERIENCE</Link> </li>
-        <li class="nav-item"> <Link to="/PROJECTS">PROJECTS</Link> </li>
-      </ul>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">  <Link to="/">PROFILE</Link> </li>
+            <li class="nav-item"><Link to="/EXPERIENCE">EXPERIENCE</Link> </li>
+            <li class="nav-item"> <Link to="/PROJECTS">PROJECTS</Link> </li>
+          </ul>
+        </div>
 </nav>
 
           <hr />

@@ -57,7 +57,7 @@
     transform: skew(-5deg, 0deg);
   }
 }
-Link{
+.navbar-nav li{
   padding: 2rem;
 }
 h4,h5{
