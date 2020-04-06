@@ -124,11 +124,12 @@ h4,h5{
   font-size: 2rem;
 }
 .experience_background {
-  background-color: #28cfdcd1;
-  background-image: linear-gradient(-38deg, #f8f9fa 30%, transparent 30%);
+  background-color:#22363ff2;
+  background-image: linear-gradient(-38deg, #a4a8ac 30%, transparent 30%);
 }
 .experience_background table,.cc_list{
   font-size: 1.25rem;
+  color:#fafafa;
 }
 .Project_background{
   background:
