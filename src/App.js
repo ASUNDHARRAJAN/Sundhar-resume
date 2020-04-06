@@ -206,7 +206,7 @@ render(){
       );
 
       }
-    }/><Switch>
+    }/>
         <Route path="/Sundhar-resume/Experience" exact strict render={
           () => {
             return(
@@ -299,7 +299,7 @@ render(){
              );
           }
         }/>
-        </Switch></div>
+        </div>
     </Router>
   );
 }
