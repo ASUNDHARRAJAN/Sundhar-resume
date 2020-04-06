@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Image} from 'react-bootstrap';
-import {BrowserRouter as Router,Switch} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
 class App extends Component{
@@ -9,7 +9,6 @@ render(){
   return(
     
     <Router>
-      <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/Sundhar-resume/">SUNDHARRAJAN</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +29,6 @@ render(){
       </ul>
     </div>
 </nav>
-<Switch>
 <Route path="/Sundhar-resume/" exact strict render={
       () => {
         return(
@@ -300,8 +298,6 @@ render(){
              );
           }
         }/>
-        </Switch>
-        </div>
     </Router>
   );
 }
