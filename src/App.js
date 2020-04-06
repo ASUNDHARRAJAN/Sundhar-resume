@@ -8,7 +8,7 @@ class App extends Component{
 render(){
   return(
     
-    <Router basename='/'>
+    <Router>
       <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/Sundhar-resume/">SUNDHARRAJAN</a>
