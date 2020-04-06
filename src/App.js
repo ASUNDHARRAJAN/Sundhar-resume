@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Image} from 'react-bootstrap';
-import {HashRouter as Router,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Switch} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
 class App extends Component{
@@ -30,6 +30,7 @@ render(){
       </ul>
     </div>
 </nav>
+<Switch>
 <Route path="/Sundhar-resume/" exact strict render={
       () => {
         return(
@@ -299,7 +300,7 @@ render(){
              );
           }
         }/>
-        </div>
+        </Switch></div>
     </Router>
   );
 }
