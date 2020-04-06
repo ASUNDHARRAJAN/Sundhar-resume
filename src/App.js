@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Image} from 'react-bootstrap';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <b>SUNDHARRAJAN</b>
@@ -30,7 +30,7 @@ class App extends Component {
           <Route path="/EXPERIENCE" component={EXPERIENCE} />
           <Route path="/PROJECTS" component={PROJECTS} />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
@@ -206,10 +206,6 @@ const PROFILE = () =>
 </section><br></br>
 
 </div>
-
-
-
-
 
 const EXPERIENCE = () => 
 <section class="experience_background">
