@@ -30,7 +30,6 @@ render(){
       </ul>
     </div>
 </nav>
-<Switch>
 <Route path="/Sundhar-resume/" exact strict render={
       () => {
         return(
@@ -207,7 +206,7 @@ render(){
       );
 
       }
-    }/>
+    }/><Switch>
         <Route path="/Sundhar-resume/Experience" exact strict render={
           () => {
             return(
