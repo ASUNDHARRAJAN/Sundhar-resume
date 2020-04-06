@@ -18,15 +18,9 @@ class App extends Component {
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-        <li><Link to="/">PROFILE</Link></li>
-        </li>
-        <li class="nav-item">
-        <li><Link to="/EXPERIENCE">EXPERIENCE</Link></li>>
-        </li>
-        <li class="nav-item">
-        <li><Link to="/PROJECTS">PROJECTS</Link></li>
-        </li>
+        <li class="nav-item active">  <Link to="/">PROFILE</Link> </li>
+        <li class="nav-item"> <Link to="/EXPERIENCE">EXPERIENCE</Link> </li>
+        <li class="nav-item"> <Link to="/PROJECTS">PROJECTS</Link> </li>
       </ul>
     </div>
 </nav>
