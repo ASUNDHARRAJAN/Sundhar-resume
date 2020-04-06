@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Image} from 'react-bootstrap';
-import {BrowserRouter as Router,Switch} from 'react-router-dom';
 import { HashRouter, Route, Link } from "react-router-dom";
 
 
 class App extends Component {
   render() {
     return (
-      <HashRouter basename="/">
+      <HashRouter>
         <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <b>SUNDHARRAJAN</b>
