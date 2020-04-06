@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Image} from 'react-bootstrap';
-import { HashRouter, Route, Link } from "react-router-dom";
-
+import { HashRouter, Route, Link, Router} from "react-router-dom";
 
 class App extends Component {
   render() {
