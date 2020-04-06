@@ -38,10 +38,10 @@ const PROFILE = () =>
 <div class="container-fluid">
 <div class="row profile_section">
     <div class="col-md-6 text-center profile_section_left">
-      <Image src="Profile.jpg" width="250" height="300" roundedCircle/>
+      <Image src="Profile.jpg" width="240" height="275" roundedCircle/>
     </div>
     <div class="col-md-6 profile_section_right">
-        <p><b>SUNDHARRAJAN </b> <br></br> SALEM,TamilNadu <br></br> 8344230573 <br></br> SundharAnnadurai@gmail.com <br></br></p>
+        <p><b>SUNDHARRAJAN </b> <br></br> SALEM,Tamilnadu <br></br> 8344230573 <br></br> SundharAnnadurai@gmail.com <br></br></p>
     </div>
 </div><br></br>
 <div class="row objective_section">

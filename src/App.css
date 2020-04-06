@@ -44,7 +44,7 @@
 }
 
 .profile_section {
-  background: linear-gradient(180deg,#ff8a00,#e52e71);
+  background-color:#3AAFA9;
   animation: skew 5s;
   transform: skew(0deg);
 }
