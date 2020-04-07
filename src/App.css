@@ -44,19 +44,9 @@
 }
 
 .profile_section {
-  background-color:#367774;
-  animation: skew 5s;
-  transform: skew(0deg);
+  background-color:#1468a5;
 }
 
-@keyframes skew {
-  0% {
-    transform: skew(5deg, 0deg);
-  }
-  100% {
-    transform: skew(-5deg, 0deg);
-  }
-}
 .navbar-nav li{
   padding: 0 1rem;
 }
